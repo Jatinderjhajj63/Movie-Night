@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Night 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1e1e2f;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/w0xX7bH/stars.gif') repeat;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    .container {
+      z-index: 1;
+      text-align: center;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .typing {
+      font-size: 1.2rem;
+      white-space: nowrap;
+      border-right: 3px solid #fff;
+      width: 0;
+      overflow: hidden;
+      animation: typing 4s steps(40, end) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    .button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #ff5e78;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff5e78;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>🎬 Virtual Movie Date</h1>
+    <div class="typing">Hey Reshma... Ready for our cozy movie night at 11:30? 🍿💻</div>
+    <button class="button" onclick="window.location.href='https://meet.google.com/nmr-qvpy-jga'">Join the Date 💖</button>
+  </div>
+</body>
+</html>
